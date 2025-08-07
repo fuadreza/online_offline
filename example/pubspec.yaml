@@ -1,0 +1,13 @@
+name: example
+
+environment:
+  sdk: ">=3.7.2 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  online_offline:
+    path: ../
+
+dev_dependencies:
+  flutter_lints: 3.0.1
