@@ -7,7 +7,6 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
   group('ConnectionService', () {
-
     late ConnectionService service;
 
     setUp(() {

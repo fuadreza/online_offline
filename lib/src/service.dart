@@ -104,7 +104,8 @@ class ConnectionService with WidgetsBindingObserver {
       isOnline.value = currentlyOnline;
       // Log the status change if debug logging is enabled
       if (enableDebugLogging) {
-        debugPrint('Internet status changed: ${isOnline.value ? 'Online' : 'Offline'}');
+        debugPrint(
+            'Internet status changed: ${isOnline.value ? 'Online' : 'Offline'}');
       }
     }
   }
@@ -118,7 +119,8 @@ class ConnectionService with WidgetsBindingObserver {
 
     // Log the start of monitoring if debug logging is enabled
     if (enableDebugLogging) {
-      debugPrint('Starting internet monitoring with interval: ${checkInterval.inSeconds} seconds');
+      debugPrint(
+          'Starting internet monitoring with interval: ${checkInterval.inSeconds} seconds');
     }
   }
 
@@ -144,15 +146,15 @@ class ConnectionService with WidgetsBindingObserver {
     }
     switch (state) {
       case AppLifecycleState.resumed:
-      // App is in the foreground, resume monitoring
+        // App is in the foreground, resume monitoring
         _startMonitoring();
       case AppLifecycleState.inactive:
       case AppLifecycleState.paused:
       case AppLifecycleState.detached:
-      // App is in the background or terminated, stop monitoring
+        // App is in the background or terminated, stop monitoring
         _stopMonitoring();
       case AppLifecycleState.hidden:
-      // App is hidden (e.g., on web when tab is not active)
+        // App is hidden (e.g., on web when tab is not active)
         _stopMonitoring();
     }
   }

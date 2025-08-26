@@ -56,7 +56,9 @@ class _OnlineOfflineState extends State<OnlineOffline> {
     if (_isOnline) {
       return widget.onlineWidget;
     } else {
-      return widget.offlineWidget != null ? widget.offlineWidget! : widget.onlineWidget;
+      return widget.offlineWidget != null
+          ? widget.offlineWidget!
+          : widget.onlineWidget;
     }
   }
 }
