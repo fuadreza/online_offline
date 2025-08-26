@@ -1,6 +1,6 @@
 name: online_offline
 description: "Flutter package for monitoring internet connectivity in real-time using socket."
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/fuadreza/online_offline
 
 environment:
@@ -15,6 +15,3 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
-
-# The following section is specific to Flutter packages.
-flutter:
